@@ -30,7 +30,7 @@ For this project, I wanted to design an app based for fans of Premier League foo
  - Copy my git repository and perform a git clone in the cmd command prompt.
  - Open the project solution through Visual Studio from the folder.
  - Right click on the project and select "Deploy".
- - Select the green arrow to run the project and it should start.
+ - Select the green arrow that says "Device" beside it to run the project and it should start.
   
  ## Project Functionality
  

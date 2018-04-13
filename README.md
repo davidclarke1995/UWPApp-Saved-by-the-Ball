@@ -34,8 +34,12 @@ For this project, I wanted to design an app based for fans of Premier League foo
   
  ## Project Functionality
  
- When the app opens, a Splash page is displayed to show the user what this app is about. An image of a football in a field. Once that closes down, the user will see a menu.
-  
+ When the app opens, a Splash page is displayed to show the user what this app is about. An image of a football in a field. Once that closes down, the user will see a menu on the left hand side. This has 4 options, Settings, About, Trailer and Store. "About" brings the user to a page that tells them a little about what the app is designed for aided with a humerous gif of Alan Pardrew dancing. "Trailer" opens a page which plays a media element. A video of the Premier League season. "Store" is a hyperlink that sends the user to a football store where they can bye t-shirts, jerseys, boots and lots more. "Settings" never got completed unfortunately. When the user is in the home page, they have a pivot displaying 3 Premier League teams. In time, I will add as many teams as I can, going through each team in the PM and eventually moving onto La Liga and the Bundesliga. Once the user selects the team of their choice, they can select the "View" button which brings them to their chosen team. With each click of the buttons, there is a progression sound that plays. There is also a seperate sound for opening the menu in the home page. Each page has with it a "Back" button which takes the user a page back and plays a "going down" sound. In the team pages, the user can look at some of the stats and facts of the club. They can select the club crest which brings them directly to the club official website. They can select the button at the bottom "View xxxx on the map" and it will bring the user to a seperate window with a geolocation of the team stadium. It is centered to the exact co-ordinates, zoomed in and pin pointed with a flag aided with a picture of that stadium.
+ 
+ ## Features that I wanted
+ 
+ Before Visual Studio crashed, I had been working extensively on a local database using SQLite. What the idea was that each team page would have clickable tiles with pics of players faces from that team.
+ 
   
  ## Features of the project
  
@@ -87,3 +91,11 @@ I am proud that I did not need many places to reference. I did not copy and past
 
 - https://www.udemy.com/complete-uwp-course/learn/v4/content
 - https://stackoverflow.com/questions
+
+
+## Additional Comments
+Throughout doing this project, I found myself being very frustrated as I spent more time trying to figure out issues with Visual Studio than actually writing code. I spent hours on end trying to figure out why my project would not deploy or run. I lost count the amount of times I had to uninstall and reinstall or Repair Visual Studio. I also worked for many days on a seperate project that held many pages with code that I had yet to implement into my app but was very valuable to me including a rating system for players and most importantly the local database. But with Visual Studio being the most temperamental program I have ever used, it crashed, deleting that entire project. After the crash I lost many images and parts from the app project also so I spent a lot of time repairing and mending what I had already completed. During the final week of our time we had left to finish the project, another problem had arrisen. This was the final problem as I was no longer able to access Visual Studio again after, leaving me no choice but to just submit what I had left. A message kept appearring prompting me to Install an emulator. I installed it 5 or 6 times but the message would not go away (screenshot of message provided). With all these problems, of course I never got a chance to complete the app and request for it to be put on the store. I wanted to add this as I have spent longer on this project than I have ever spent on a project before and I feel like the many hours used on this has taken away from other projects but I am believe that I am very knowledgable about UWP but havent been able to show my true strength in it.
+
+Aside from this, I had many problems with GitHub also (I can only blame myself). When I tried committing to GitHub at one point, it told me that there was a file that exceeded the 100 mb limit. It was referring to a video file. I decided to delete this file and re-commit. It produced the same error, time and time again. I tried finding a solution over the internet but no problem seemed to relate. After eventually speaking to a member of the GitHub support team, I learned that even though I had deleted the video, I could not perform a git push as the video commit was still in my branch history. We exchanged emails about how to fix this problem but we could not come to a resolution. Eventually I resorted to creating a new repository and copying all my project files into a new folder and committing those. It finally pushed to GitHub.
+
+Finally I'd like to add that I am proud that throughout all the many unusual hurdles, I've still come out with a working functioning UWP application that I have written myself 100% and would be happy to take any questions you have about my project.

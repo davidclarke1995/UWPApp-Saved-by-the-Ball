@@ -38,7 +38,9 @@ For this project, I wanted to design an app based for fans of Premier League foo
  
  ## Features that I wanted
  
- Before Visual Studio crashed, I had been working extensively on a local database using SQLite. What the idea was that each team page would have clickable tiles with pics of players faces from that team.
+ Before Visual Studio crashed, I had been working extensively on a local database using SQLite. The idea was that each team page would have clickable tiles with pictures of players faces from that team. The user could click into a tile and read stats. The stats I had were: Name, age, shirt number and rating out of 100. With more time and in the future, I can add more statistics to this and feature more players. There is an empty tile also that when the user selects, they can input their own player. This can be anyone from a real footballer to the user themself. From here they can alter the stats as much as they would like. I had it working as much as it would read in a file and output what the user has written. I was unable to regenerate new tiles after one had been made. 
+ 
+ Another feature that I was working on but never got to include in my project was a different rating system. I was able to have clickable stars that would be golden when selected and greyed out depending on the rating given. The rating in number would also be shown beside the stars. This is as far as I got but with more time and less disruption, I would have loved to have a "Favourites" tab on the menu and use a local storage that the user can give a rating to a player and favourite them and the player (along with their info) would save into the favourites page.
  
   
  ## Features of the project

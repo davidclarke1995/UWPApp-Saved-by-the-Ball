@@ -10,7 +10,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 		<StackPanel>
 			<Button Content="Back" Click="Button_Click"/>
-			<TextBlock Text="Home" FontSize="50" SelectionChanged="TextBlock_SelectionChanged"/>
+			<TextBlock Text="Settings" FontSize="50" SelectionChanged="TextBlock_SelectionChanged"/>
 		</StackPanel>
 	</Grid>
 </Page>

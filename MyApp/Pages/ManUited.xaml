@@ -1,0 +1,45 @@
+﻿<Page
+    x:Class="MyApp.Pages.ManUited"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:map="using:Windows.UI.Xaml.Controls.Maps" 
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+		<Grid x:Name="main">
+			<Grid.Background>
+				<ImageBrush Stretch="Fill" ImageSource="ms-appx:///Images/ManUnitedbg.jpg"/>
+			</Grid.Background>
+		</Grid>
+		<ScrollViewer>
+		<StackPanel>
+			<Button Content="Back" Foreground="White" Click="Button_Click"/>
+
+				<HyperlinkButton NavigateUri="http://www.manutd.com">
+					<Image Margin="50" VerticalAlignment="Center" HorizontalAlignment="Center" Height="100" Width="100" Source="ms-appx:///Images/ManUnitedCrest.jpg"/>
+				</HyperlinkButton>
+
+				<TextBlock TextWrapping="WrapWholeWords" HorizontalAlignment="Center" Text="Manchester United FC" Foreground="White" FontSize="50" SelectionChanged="TextBlock_SelectionChanged"/>
+				<TextBlock Margin="50" HorizontalAlignment="Center" x:Name="txb" TextWrapping="WrapWholeWords" FontSize="15" Foreground="White">Manchester United Football Club is
+					a professional football club based in Old Trafford, Greater Manchester, England, that competes 
+					in the Premier League, the top flight of English football. Nicknamed "the Red Devils", the club 
+					was founded as Newton Heath LYR Football Club in 1878, changed its name to Manchester United in 
+					1902 and moved to its current stadium, Old Trafford, in 1910.
+					Manchester United have won a record 20 League titles, 12 FA Cups, 5 League Cups and a record 21 
+					FA Community Shields. The club has also won three UEFA Champions Leagues, one UEFA Europa League,
+					one UEFA Cup Winners' Cup, one UEFA Super Cup, one Intercontinental Cup and one FIFA Club World 
+					Cup. In 1998–99, the club became the first in the history of English football to achieve the treble
+					of the Premier League, the FA Cup and the UEFA Champions League. In 2016–17, by winning the UEFA
+					Europa League, they became one of five clubs to have won all three main UEFA club competitions. In 
+					addition, they became the only professional English club to have won every ongoing honour available
+					to the first team that is organised by a national or international governing body.</TextBlock>
+			<Button Content="View Map of Old Trafford" Foreground="White" Click="OldTrafford"/>
+		</StackPanel>
+		</ScrollViewer>
+	</Grid>
+
+</Page>

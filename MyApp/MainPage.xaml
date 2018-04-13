@@ -1,0 +1,168 @@
+﻿<Page
+    x:Class="MyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:map="using:Windows.UI.Xaml.Controls.Maps" 
+    mc:Ignorable="d">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+		
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Border HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Background="ForestGreen">
+			<Button Padding="0" Margin="2,4,4,10" Click="Button_Click_1">
+				<FontIcon Foreground="White" Glyph="&#xE700;" FontFamily="Segoe MDL2 Assets"/>
+			</Button>
+		</Border>
+		<SplitView x:Name="SView" Grid.Row="1" IsPaneOpen="False" DisplayMode="CompactOverlay" PaneBackground="ForestGreen" Foreground="White" CompactPaneLength="28">
+			<SplitView.Pane>
+				<Grid >
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="28"/>
+						<ColumnDefinition/>
+					</Grid.ColumnDefinitions>
+					<SymbolIcon Grid.Row="0" Margin="4" Symbol="Setting" HorizontalAlignment="Left" />
+					<SymbolIcon Grid.Row="1" Margin="4" Symbol="Help" HorizontalAlignment="Left"/>
+					<SymbolIcon Grid.Row="2" Margin="4" Symbol="Video" HorizontalAlignment="Left"/>
+					<SymbolIcon Grid.Row="3" Margin="4" Symbol="Shop" HorizontalAlignment="Left"/>
+					<Button Content="Settings" Grid.Column="1" Grid.Row="0" Margin="4" Foreground="White" Click="HomePage"/>
+					<Button Content="About" Grid.Column="1" Grid.Row="1" Margin="4" Foreground="White" Click="About"/>
+					<Button Content="Trailer" Grid.Column="1" Grid.Row="2" Margin="4" Foreground="White" Click="Video"/>
+					<HyperlinkButton NavigateUri="https://www.uksoccershop.com/" Content="Store" Grid.Column="1" Grid.Row="3" Margin="4" Foreground="White" Click="Button_Click"/>
+				</Grid>
+			</SplitView.Pane>
+
+			<ListBox Background="Gray">
+				<!--<TextBlock FontSize="40" Text="Hello"/>-->
+				<!--<MediaElement Source="Images/Video.mp4"/>-->
+				<Pivot x:Name="rootPivot" Title="Premier League Teams">
+					<PivotItem Header="Manchester United">
+						<!--Pivot content goes here-->
+						<Button Content="View" Click="ManUnitedPage"/>
+					</PivotItem>
+					<PivotItem Header="Chelsea">
+						<!--Pivot content goes here-->
+						<Button Content="View" Click="ChelseaPage"/>
+					</PivotItem>
+					<PivotItem Header="Liverpool">
+						<!--Pivot content goes here-->
+						<Button Content="View" Click="LiverpoolPage"/>
+					</PivotItem>
+				</Pivot>
+
+						<!--<Grid x:Name="main">
+							<Grid.Background>
+								<ImageBrush Stretch="Fill" ImageSource="ms-appx:///Images/ManUnitedbg.jpg"/>
+							</Grid.Background>
+						</Grid>-->
+
+						<!--<StackPanel>
+					<MediaElement Source="ms-appx:///Images/mainpagebg.jpg"/>
+				</StackPanel>-->
+
+				
+
+			</ListBox>
+			
+
+		</SplitView>
+
+		
+
+		<!--<StackPanel Margin="-146,-52,146,52">
+			<Button Content="Go to second page" Click="Button_Click"/>
+			<HyperlinkButton Content="Go to second page" Click="Button_Click"/>
+		</StackPanel>-->
+
+
+
+
+		<!--<StackPanel>
+			<local:GenericRatingControl Rating="4">
+				<local:GenericRatingControl.Template>
+					<ControlTemplate TargetType="local:GenericRatingControl">
+						<TextBlock FontSize="50" Text="{Binding Rating, RelativeSource={RelativeSource Mode=TemplatedParent}}"/>
+						</ControlTemplate>
+			</local:GenericRatingControl.Template>
+			</local:GenericRatingControl>
+		</StackPanel>-->
+		
+		<!--<local:Rating Value="5"/>-->
+		<!--<local:LeftRightContentControl LeftContent="{Binding}" RightContent="{Binding}">
+			<local:LeftRightContentControl.LeftTemplate>
+				<DataTemplate>
+					<TextBlock FontSize="40" VerticalAlignment="Center" Text="{Binding}"/>
+				</DataTemplate>
+			</local:LeftRightContentControl.LeftTemplate>
+			<local:LeftRightContentControl.RightTemplate>
+				<DataTemplate>
+					<local:Rating Value="{Binding}"/>
+				</DataTemplate>
+			</local:LeftRightContentControl.RightTemplate>
+		</local:LeftRightContentControl>-->
+
+		
+
+		<!--<map:MapControl ZoomLevel="13" x:Name="Map">
+			<Image Source="Images/Old Trafford.jpg" Width="100" Height="100" x:Name="Pic"/>
+				<SymbolIcon Symbol="Flag" x:Name="Flag"/>
+		</map:MapControl>-->
+
+
+
+		<!--<CommandBar>
+			<AppBarButton Icon="Shuffle" Label="Shuffle"/>
+			<AppBarToggleButton Icon="RepeatAll" Label="Repeat"/>
+			<AppBarSeparator/>
+			<AppBarButton Icon="Back" Label="Back"/>
+			<AppBarButton Icon="Stop" Label="Stop"/>
+			<AppBarButton Icon="Play" Label="Play"/>
+			<AppBarButton Icon="Forward" Label="Forward"/>
+			<CommandBar.Content>
+				<TextBlock Text="Now Playing..." Margin="12,14"/>
+			</CommandBar.Content>
+			<CommandBar.SecondaryCommands>
+				<AppBarButton Icon="Like"/>
+				<AppBarButton Icon="Dislike"/>
+			</CommandBar.SecondaryCommands>
+		</CommandBar>-->
+
+		
+		
+				<!--<Button Content="Click Me!" FontSize="50" Click="Button_Click"/>
+		<TextBox Text="" x:Name="MyText" FontSize="50"/>-->
+
+			<!--<TextBlock Text="Hello World" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" PointerPressed="TextBlock_PointerPressed"/>
+		<Rectangle Fill="Green" Height="100" IsHitTestVisible="False" Opacity="0.5" PointerPressed="Rectangle_PointerPressed"/>-->
+
+		<!--<TextBlock Text="hello world" FontSize ="40"
+				   HorizontalAlignment="Center"
+				   VerticalAlignment="Center"/>-->
+		
+		<!--<Rectangle Fill="Blue" RadiusX="150" RadiusY="150" Stroke="Black" StrokeThickness="10"
+				   StrokeDashArray="5,3"
+				   Margin="50,0"/>-->
+
+			<!--<Image Source="Images/notespic.png" Stretch="Uniform"/>-->
+
+		<!--<TextBlock Text="Hello world how is it going?"
+				   FontSize="50"
+				   FontFamily="Comic Sans"
+				   TextWrapping="Wrap"
+				   TextAlignment="Center"/>-->
+		
+	</Grid>
+			
+</Page>

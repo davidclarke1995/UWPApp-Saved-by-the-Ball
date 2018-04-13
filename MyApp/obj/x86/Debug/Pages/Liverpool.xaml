@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="MyApp.Pages.Liverpool"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:map="using:Windows.UI.Xaml.Controls.Maps" 
+    mc:Ignorable="d">
+
+	<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+		<Grid x:ConnectionId='1' x:Name="main">
+			<Grid.Background>
+				<ImageBrush Stretch="Fill" ImageSource="ms-appx:///Images/Liverpoolbg.jpg"/>
+			</Grid.Background>
+		</Grid>
+		<ScrollViewer>
+			<StackPanel>
+			<Button x:ConnectionId='2' Content="Back" Foreground="White"                     />
+				<HyperlinkButton NavigateUri="http://www.liverpoolfc.com">
+					<Image Margin="50" Height="100" Width="100" Source="ms-appx:///Images/LiverpoolCrest.jpg"/>
+				</HyperlinkButton>
+				<TextBlock x:ConnectionId='3' TextWrapping="WrapWholeWords" HorizontalAlignment="Center" Text="Liverpool FC" Foreground="White" FontSize="50"                                              />
+				<TextBlock x:ConnectionId='4' Margin="50" x:Name="txb" TextWrapping="WrapWholeWords" FontSize="15" Foreground="White">Liverpool Football
+					Club is a professional football club in Liverpool, England, which competes in the 
+					Premier League, the top tier of English football. The club has won 5 European Cups, 3 UEFA Cups,
+					3 UEFA Super Cups, 18 League titles, 7 FA Cups, 8 League Cups, and 15 FA Community Shields. 
+					Founded in 1892, the club joined the Football League the following year and has played at Anfield
+					since its formation. Liverpool established itself as a major force in English and European football
+					in the 1970s and 1980s when Bill Shankly and Bob Paisley led the club to 11 League titles and seven
+					European trophies. Under the management of Rafael Benítez and captained by Steven Gerrard, 
+					Liverpool became European champions for the fifth time in 2005. Liverpool was the ninth 
+					highest-earning football club in the world in 2016–17, with an annual revenue of €424.2 million,
+					and the world's eighth most valuable football club in 2017, valued at $1.492 billion. The club has
+					long-standing rivalries with Manchester United and Everton.</TextBlock>
+			<Button x:ConnectionId='5' Content="View Map of Anfield" Foreground="White"                />
+		</StackPanel>
+		</ScrollViewer>
+	</Grid>
+
+</Page>
+

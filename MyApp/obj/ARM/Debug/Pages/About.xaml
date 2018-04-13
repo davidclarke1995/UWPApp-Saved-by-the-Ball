@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="MyApp.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+		<Grid x:ConnectionId='1' x:Name="main">
+			<Grid.Background>
+				<ImageBrush Stretch="Fill" ImageSource="ms-appx:///Images/mainpagebg.jpg"/>
+			</Grid.Background>
+		</Grid>
+		<ScrollViewer>
+			<StackPanel>
+				<Button x:ConnectionId='2' Content="Back"                     />
+				<TextBlock x:ConnectionId='3' TextWrapping="WrapWholeWords" Foreground="White" Text="About Saved by The Ball" FontSize="50"                                              />
+				<!--<MediaElement RepeatBehavior="Forever" Source="ms-appx:///Images/footballdancegif.mp4" AutoPlay="True"/>-->
+				<TextBlock Foreground="White" TextWrapping="WrapWholeWords">Saved by the Ball is an application that brings friends together,
+				designed to include yourself and your friends in teams alongside the likes of Romelu Lukaku, Eden Hazard,
+				David De Gea and Mohamed Salah! Choose which team you want to be in and what players you want to line up against. Enjoy!</TextBlock>
+				<Image Height="500" Width="500" Source="ms-appx:///Images/footballdancegif.gif"/>
+
+			</StackPanel>
+		</ScrollViewer>
+
+
+	</Grid>
+</Page>
+
